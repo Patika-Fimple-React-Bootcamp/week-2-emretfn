@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Post Listing</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="header-inner">
+        <h2>Post Listing</h2>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search a post..."
+          class="search-input"
+        />
+      </div>
+    </section>
+    <main class="main container">
+      <article class="card">
+        <div class="card-header">
+          <img src="https://source.unsplash.com/featured/300x300?1" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Post Title</h3>
+          <p class="card-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, voluptate,
+            quibusdam,
+          </p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-danger">Delete</button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
