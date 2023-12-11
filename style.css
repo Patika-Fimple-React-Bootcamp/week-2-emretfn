@@ -23,6 +23,7 @@ body.no-scroll {
   padding: 0 20px;
 }
 
+/* HEADER STYLING */
 .header-inner {
   display: flex;
   flex-direction: column;
@@ -60,6 +61,7 @@ body.no-scroll {
   background-color: #fff;
 }
 
+/* POST LOADER STYLING */
 .loader {
   display: flex;
   align-items: center;
@@ -73,6 +75,7 @@ body.no-scroll {
   animation: spin 1s linear infinite;
 }
 
+/* POST CARD STYLING */
 .main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -129,6 +132,7 @@ body.no-scroll {
   margin-top: auto;
 }
 
+/* MODAL STYLING */
 .modal .modal-overlay {
   position: fixed;
   top: 0;
@@ -261,6 +265,7 @@ body.no-scroll {
   font-weight: 400;
 }
 
+/* COMPONENTS */
 .btn {
   display: inline-block;
   padding: 12px 16px;
@@ -282,12 +287,14 @@ body.no-scroll {
   background-color: rgba(227, 23, 10, 0.8);
 }
 
+/* ANIMATIONS */
 @keyframes spin {
   100% {
     transform: rotate(360deg);
   }
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
   .main {
     grid-template-columns: repeat(2, 1fr);
