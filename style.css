@@ -226,10 +226,14 @@ body.no-scroll {
   display: none;
   flex-direction: column;
   row-gap: 16px;
-  padding-right: 10px;
   background-color: #fff;
   height: 100%;
   overflow-y: auto;
+}
+
+/* Comments list scrollbar */
+.modal-body .modal-comment-list::-webkit-scrollbar {
+  width: 0;
 }
 
 .modal-body .modal-comment-list .modal-comment {
