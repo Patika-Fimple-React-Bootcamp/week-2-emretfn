@@ -11,6 +11,12 @@ body {
   color: #2e2d4d;
 }
 
+body.no-scroll {
+  overflow: hidden;
+  /* prevent sliding content right */
+  padding-right: 15px;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -124,7 +130,7 @@ body {
 }
 
 .modal .modal-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -134,10 +140,11 @@ body {
   z-index: 500;
   opacity: 0;
   pointer-events: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .modal .modal-inner {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -153,6 +160,13 @@ body {
   padding: 20px;
   opacity: 0;
   pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal.show .modal-overlay,
+.modal.show .modal-inner {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal .modal-inner .modal-header {
@@ -209,7 +223,7 @@ body {
 }
 
 .modal-body .modal-comment-list {
-  display: flex;
+  display: none;
   flex-direction: column;
   row-gap: 16px;
   padding: 10px;
